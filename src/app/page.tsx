@@ -1,31 +1,49 @@
-import { CarouselPlugin } from "@/components/CarouselPlugin";
-import Logo from "@/components/Logo";
-import { ModeToggle } from "@/components/ModeToggle";
-import { NavigationMenuDemo } from "@/components/NavigationMenuDemo";
+
+import CarouselSize from "@/components/Carousel";
+import { Depoimentos } from "@/components/Depoimentos";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import InitialSection from "@/components/InitialSection";
+import Produtos from "@/components/Produtos";
 
 export default function Home() {
   return (
-    <main className="absolute top-0 left-0 w-full h-full bg-black/60 -z-10">
-      <header
-        className="flex justify-between items-center"
-        style={{ background: "var(--color-principal)", color: "white" }}
-      >
-        <Logo />
-        <div className="flex gap-8">
-          <NavigationMenuDemo />
-          <ModeToggle />
+    <main className="top-0 left-0 w-full h-full bg-black/60">
+      <Header/>
+      <section>
+        <InitialSection />
+      </section>
+      <section className="flex flex-col text-center text-white gap-10 p-14">
+        <h1 className="text-3xl font-bold">Onde Nossos Serviços Estão Aplicados</h1>
+        <CarouselSize/>
+      </section>
+      <section className="flex h-full flex-col w-full items-center text-white text-center gap-10">
+        <h1 className="text-3xl font-bold">Nossos Produtos</h1>
+        <p className="w-[80%] text-xl">
+          A RAC Soluções é uma empresa especializada em fornecer serviços
+          completos na área de geração de energia. Oferecemos uma variedade de
+          serviços que incluem venda de produtos, emissão de laudos e
+          consultorias, aluguel de geradores, serviços de manutenção, realização
+          de estudos técnicos e muito mais.
+        </p>
+        <div className="w-[80%]">
+          <Produtos />
         </div>
-        <a className="cursor-pointer border rounded-2xl p-2 mr-28 text-white" style={{boxShadow: '0 0 10px white'}}>
-          <span className="flex items-center gap-2">
-            <img src="telefone.png" className="w-7" alt="tel" />
-            11 3552-5300
-          </span>
-          
-          <h3>ENTRE EM CONTATO</h3>
-        </a>
-      </header>
-      <section className="flex items-center justify-center h-">
-        <CarouselPlugin/>
+        <section className="flex flex-col text-white text-center gap-10 w-[80%] h-full items-center bg-gray-500/60 rounded-2xl p-10 shadow-black shadow-2xl">
+          <h1 className="text-3xl font-bold">O que estão nossos clientes comentam</h1>
+          <p>
+            Hoje a RAC possui um relacionamento definitivo com seus clientes
+            onde 99% opta por renovar seus contratos pela exelencia e resultado
+            do trabalho feito, confira alguns comentarios de nossos clientes:
+          </p>
+          <div className="w-2/3 h-1 bg-white"></div>
+          <div>
+            <Depoimentos/>
+          </div>
+        </section>
+        <div className="w-full">
+          <Footer/>
+        </div>
       </section>
     </main>
   );

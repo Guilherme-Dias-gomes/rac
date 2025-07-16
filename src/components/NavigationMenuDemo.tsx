@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
 
 import {
   NavigationMenu,
@@ -17,30 +16,30 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Transformadores",
-    href: "/produtos/primitives/alert-dialog",
+    href: "/produtos/transformador",
     description:
       "Transformadores transferem energia entre circuitos por indução eletromagnética, ajustando a voltagem com bobinas enroladas em um núcleo ferromagnético. São essenciais na transmissão e distribuição de energia elétrica.",
   },
   {
     title: "Subestações",
-    href: "/produtos/primitives/hover-card",
+    href: "/produtos/subestacao",
     description:
       "Uma subestação é uma instalação que reduz a alta tensão da energia recebida para níveis adequados ao consumo, utilizando transformadores, disjuntores e equipamentos de controle. É essencial para a distribuição segura e eficiente da eletricidade.",
   },
   {
     title: "Painéis MT",
-    href: "/docs/primitives/progress",
+    href: "/produtos/painelMT",
     description:
       "Um painel de média tensão (MT) controla e protege a distribuição de energia entre 1 kV e 36 kV. Com disjuntores e seccionadores, sua estrutura modular facilita a instalação e manutenção, garantindo segurança e continuidade elétrica.",
   },
   {
     title: "Painéis BT",
-    href: "/docs/primitives/scroll-area",
+    href: "/produtos/painelBT",
     description: "Um painel de baixa tensão (BT) distribui e controla energia elétrica até 1 kV, abrigando disjuntores, relés e outros dispositivos. É essencial para a segurança e eficiência em instalações comerciais, industriais e residenciais.",
   },
   {
     title: "Geradores de Energia",
-    href: "/docs/primitives/tabs",
+    href: "/produtos/gerador",
     description:
       "Um gerador converte energia mecânica em elétrica usando um motor acoplado a um alternador. É usado para fornecer energia em emergências ou em locais sem acesso à rede elétrica",
   },
@@ -52,7 +51,7 @@ export function NavigationMenuDemo() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/home">Home</Link>
+            <Link href="/">Home</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
@@ -78,39 +77,15 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Projetos</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[300px] gap-4">
-              <li>
-                <NavigationMenuLink asChild>
-                  <Link href="#">
-                    <div className="font-medium">Components</div>
-                    <div className="text-muted-foreground">
-                      Browse all components in the library.
-                    </div>
-                  </Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">
-                    <div className="font-medium">Documentation</div>
-                    <div className="text-muted-foreground">
-                      Learn how to use the library.
-                    </div>
-                  </Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">
-                    <div className="font-medium">Blog</div>
-                    <div className="text-muted-foreground">
-                      Read our latest blog posts.
-                    </div>
-                  </Link>
-                </NavigationMenuLink>
-              </li>
-            </ul>
-          </NavigationMenuContent>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href="/projetos">Projetos</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href="/contato">Contato</Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
