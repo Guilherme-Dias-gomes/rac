@@ -21,7 +21,7 @@ export function ModeToggle() {
         <Button
           variant="outline"
           size="icon"
-          className="fixed  right-4 p-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 transform hover:rotate-180 transition-all duration-500 z-50"
+          className="p-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 transform hover:rotate-180 transition-all duration-500"
         >
           {/* Sun aparece apenas no modo claro */}
           <Sun className="h-[1.2rem] w-[1.2rem] text-white block dark:hidden" />
@@ -46,4 +46,3 @@ export function ModeToggle() {
     </DropdownMenu>
   );
 }
-

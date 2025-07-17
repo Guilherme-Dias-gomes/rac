@@ -43,8 +43,8 @@ export default function InitialSection() {
         />
       </div>
       <div className="flex flex-col mx-auto max-w-7xl px-6 lg:px-8 justify-center items-center text-center">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-5xl">
+        <div className="mx-auto max-w-2xl lg:mx-0 mt-6">
+          <h2 className="lg:text-5xl text-3xl font-semibold tracking-tight text-white sm:text-5xl">
             A RAC Soluções está pronta para colaborar na definição do escopo da
             sua obra
           </h2>

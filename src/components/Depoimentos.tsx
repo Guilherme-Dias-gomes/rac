@@ -61,7 +61,7 @@ export function Depoimentos() {
                   <img
                     src="/aspa.png"
                     alt=""
-                    className="ml-2 w-1/7 h-8 object-contain"
+                    className="ml-2 w-[14%] h-8 object-contain"
                   />
 
                   <CardContent className="flex-1 flex items-center justify-center p-4">
