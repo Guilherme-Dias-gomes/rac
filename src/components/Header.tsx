@@ -4,7 +4,7 @@ import Logo from "./Logo";
 import { ModeToggle } from "./ModeToggle";
 import { NavigationMenuDemo } from "./NavigationMenuDemo";
 import { useState } from "react";
-import { Link, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
