@@ -1,14 +1,12 @@
 'use client';
 
 import { useState } from "react";
-import { useSpring, animated, useTrail } from "react-spring";
-import { FiSun, FiMoon } from "react-icons/fi";
+import { useSpring, animated } from "react-spring";
 import { FaRocket, FaChartLine, FaHandshake, FaLightbulb } from "react-icons/fa";
-import { Grafico } from "./Grafico";
+
 
 const AboutUs= () => {
-  const [darkMode, setDarkMode] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
+  const [darkMode] = useState(false);
 
   const heroAnimation = useSpring({
     from: { opacity: 0, transform: "scale(0.9)" },
@@ -16,11 +14,11 @@ const AboutUs= () => {
     config: { tension: 280, friction: 20 }
   });
 
-  const trail = useTrail(4, {
-    from: { opacity: 0, transform: "translateY(50px)" },
-    to: { opacity: 1, transform: "translateY(0)" },
-    config: { mass: 1, tension: 280, friction: 20 }
-  });
+//   const trail = useTrail(4, {
+//     from: { opacity: 0, transform: "translateY(50px)" },
+//     to: { opacity: 1, transform: "translateY(0)" },
+//     config: { mass: 1, tension: 280, friction: 20 }
+//   });
 
   const capabilities = [
     { icon: <FaRocket className="animate-bounce" />, title: "Velocidade", desc: "10x mais rápido que o padrão da indústria" },
@@ -84,7 +82,6 @@ const AboutUs= () => {
             </div>
           </div>
         </animated.section>
-        <Grafico/>
         {/* Mission and Values */}
         <section className="py-20 px-4 md:px-8 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-6xl mx-auto text-center">

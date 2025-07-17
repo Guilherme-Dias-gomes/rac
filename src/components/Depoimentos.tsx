@@ -38,7 +38,7 @@ const depoimentos = [
 ];
 
 export function Depoimentos() {
-  const [selectDepoimentos, setSelectedDepoimentos] = useState(depoimentos[0]);
+  const [, setSelectedDepoimentos] = useState(depoimentos[0]);
 
   return (
     <div className="w-full px-4 flex justify-center">

@@ -74,12 +74,12 @@ const ContactSection: React.FC = () => {
         </div>
         <div className="bg-gray-200 p-8 rounded-lg shadow-md">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">
-            Let's Connect!
+            Let&apos;s Connect!
           </h3>
           <p className="text-gray-600 mb-6">
-            We'd love to hear from you. Reach out to us on any of our social
-            platforms or use the contact form below to get in touch.
+            We&apos;d love to hear from you. Reach out to us on any of our social platforms or use the contact form below to get in touch.
           </p>
+
           <form className="space-y-4">
             <div>
               <input

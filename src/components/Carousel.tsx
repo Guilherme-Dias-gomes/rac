@@ -72,7 +72,7 @@ const servicos = [
 ];
 
 export default function CarouselSize() {
-  const [selectService, setSelectedService] = useState(servicos[0]);
+  const [, setSelectedService] = useState(servicos[0]);
 
   return (
     <div className="w-full px-4 flex justify-center">

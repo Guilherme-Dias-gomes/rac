@@ -1,14 +1,13 @@
 'use client';
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { FiPlay } from "react-icons/fi";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const PainelMT = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [isRTL, setIsRTL] = useState(false);
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
+const [isDarkMode] = useState(false);
+//   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+//   const [isPlaying, setIsPlaying] = useState(false);
 
   const productData = {
     name: "PainelMT",
@@ -41,11 +40,9 @@ const PainelMT = () => {
     ]
   };
 
-  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
-  const toggleLanguage = () => setIsRTL(!isRTL);
 
   return (
-    <div className={`min-h-screen ${isDarkMode ? "dark" : ""} ${isRTL ? "rtl" : "ltr"}`}>
+    <div className={`min-h-screen ${isDarkMode ? "dark" : ""}`}>
       <div className="bg-background dark:bg-dark-background transition-colors duration-300">
         <section className="pt-40 pb-24 px-4 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent dark:from-primary/10 dark:to-transparent"></div>
