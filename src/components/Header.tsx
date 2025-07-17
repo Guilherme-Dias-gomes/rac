@@ -9,8 +9,6 @@ import { Menu, X } from "lucide-react";
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const closeMenu = () => setIsMobileMenuOpen(false);
-
   return (
     <>
       <header
