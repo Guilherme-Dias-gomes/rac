@@ -4,10 +4,13 @@ import Logo from "./Logo";
 import { ModeToggle } from "./ModeToggle";
 import { NavigationMenuDemo } from "./NavigationMenuDemo";
 import { useState } from "react";
+import Link from "next/link"; // ✅ Importação correta aqui em cima
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const closeMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <>
@@ -47,19 +50,19 @@ export default function Header() {
 
       {/* Menu Mobile */}
       {isMobileMenuOpen && (
-        <div className="fixed top-10 left-0 w-full h-screen bg-white dark:bg-zinc-900 z-40 flex flex-col items-center justify-start pt-20 gap-6">
-          <a href="/" className="text-lg text-zinc-800 dark:text-white">
-            Início
-          </a>
-          <a href="/quemSomos" className="text-lg text-zinc-800 dark:text-white">
-            Sobre
-          </a>
-          <a href="/projetos" className="text-lg text-zinc-800 dark:text-white">
-            Serviços
-          </a>
-          <a href="/contato" className="text-lg text-zinc-800 dark:text-white">
-            Contato
-          </a>
+        <div className="fixed top-16 left-0 w-full h-screen bg-white dark:bg-zinc-900 z-40 flex flex-col items-center justify-start pt-20 gap-6">
+          <Link href="/" onClick={closeMenu}>
+            <span className="text-lg text-zinc-800 dark:text-white">Início</span>
+          </Link>
+          <Link href="/quemSomos" onClick={closeMenu}>
+            <span className="text-lg text-zinc-800 dark:text-white">Sobre</span>
+          </Link>
+          <Link href="/projetos" onClick={closeMenu}>
+            <span className="text-lg text-zinc-800 dark:text-white">Serviços</span>
+          </Link>
+          <Link href="/contato" onClick={closeMenu}>
+            <span className="text-lg text-zinc-800 dark:text-white">Contato</span>
+          </Link>
         </div>
       )}
     </>
