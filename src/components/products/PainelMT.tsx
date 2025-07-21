@@ -76,7 +76,7 @@ const [isDarkMode] = useState(false);
               <motion.button 
                 whileHover={{ scale: 1.1 }}
                 className="absolute inset-0 m-auto w-16 h-16 bg-primary/90 rounded-full flex items-center justify-center">
-                <FiPlay className="w-6 h-6 text-white dark:text-black" />
+                
               </motion.button>
             </div>
             <motion.button 
