@@ -1,40 +1,82 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import * as React from "react";
+import Link from "next/link";
+import { productLinks } from "@/components/data/product-links";
+
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 
 export function NavigationMenuDemo() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggleMenu = () => setIsOpen(!isOpen)
-
   return (
-    <>
-      {/* Menu desktop */}
-      <nav className="hidden md:flex gap-4 items-center">
-        <Link href="/" className="hover:underline">Home</Link>
-        <Link href="/quemSomos" className="hover:underline">Quem Somos</Link>
-        <Link href="/projetos" className="hover:underline">Projetos</Link>
-        <Link href="/contato" className="hover:underline">Contato</Link>
-      </nav>
+    <NavigationMenu viewport={false}>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href="/">Home</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
 
-      {/* Menu mobile */}
-      <div className="md:hidden relative">
-        <Button variant="ghost" size="icon" onClick={toggleMenu}>
-          {isOpen ? <X /> : <Menu />}
-        </Button>
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href="/quemSomos">Quem Somos</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
 
-        {isOpen && (
-          <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded shadow-lg z-50 flex flex-col">
-            <Link href="/" onClick={toggleMenu} className="px-4 py-2 hover:bg-gray-200">Home</Link>
-            <Link href="/quemSomos" onClick={toggleMenu} className="px-4 py-2 hover:bg-gray-200">Quem Somos</Link>
-            <Link href="/projetos" onClick={toggleMenu} className="px-4 py-2 hover:bg-gray-200">Projetos</Link>
-            <Link href="/contato" onClick={toggleMenu} className="px-4 py-2 hover:bg-gray-200">Contato</Link>
-          </div>
-        )}
-      </div>
-    </>
-  )
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Produtos</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              {productLinks.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                >
+                  {component.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href="/projetos">Projetos</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href="/contato">Contato</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
+  );
+}
+
+function ListItem({
+  title,
+  children,
+  href,
+  ...props
+}: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
+  return (
+    <li {...props}>
+      <NavigationMenuLink asChild>
+        <Link href={href}>
+          <div className="text-sm leading-none font-medium">{title}</div>
+          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+            {children}
+          </p>
+        </Link>
+      </NavigationMenuLink>
+    </li>
+  );
 }
