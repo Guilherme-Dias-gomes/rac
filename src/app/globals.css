@@ -7,7 +7,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-principal: #6e2045;
-  --color-base: #ffffff
+  --color-base: #ffffff;
   
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
