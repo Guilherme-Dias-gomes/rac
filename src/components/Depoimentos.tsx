@@ -41,7 +41,7 @@ export function Depoimentos() {
   const [, setSelectedDepoimentos] = useState(depoimentos[0]);
 
   return (
-    <div className="w-full px-4 flex justify-center">
+    <div className="lg:w-full px-14 flex justify-center">
       <Carousel opts={{ align: "start" }} className="w-full max-w-5xl mx-auto">
         <CarouselContent>
           {depoimentos.map((depoimentos) => (
@@ -49,7 +49,7 @@ export function Depoimentos() {
               key={depoimentos.id}
               className="basis-full sm:basis-1/2 lg:basis-1/3"
             >
-              <div className="p-1 h-full">
+              <div className="h-full">
                 <Card
                   onClick={() => setSelectedDepoimentos(depoimentos)}
                   className="cursor-pointer h-full flex flex-col justify-between"
@@ -64,7 +64,7 @@ export function Depoimentos() {
                     className="ml-2 w-[14%] h-8 object-contain"
                   />
 
-                  <CardContent className="flex-1 flex items-center justify-center p-4">
+                  <CardContent className="flex-1 flex items-center justify-center p-4  ">
                     <h3 className="text-center">{depoimentos.texto}</h3>
                   </CardContent>
 
