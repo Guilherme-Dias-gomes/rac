@@ -49,7 +49,7 @@ const AboutUs= () => {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-1/2 transform hover:rotate-4 transition-all duration-500">
                 <img
-                  src="/cubiculo_de_media_tensao.webp"
+                  src="/cubiculo_de_media_tensao.png"
                   alt="RAC"
                   className="rounded-2xl shadow-2xl w-full h-[400px] object-cover hover:shadow-red-900/50"
                 />
@@ -67,7 +67,7 @@ const AboutUs= () => {
             <div className="flex flex-col md:flex-row-reverse items-center gap-12">
               <div className="md:w-1/2 transform hover:-rotate-z-4 transition-all duration-500">
                 <img
-                  src="/rac-bg.webp"
+                  src="/rac-bg.png"
                   alt="RAC"
                   className="rounded-2xl shadow-2xl w-full h-[400px] object-cover hover:shadow-red-900/50"
                 />

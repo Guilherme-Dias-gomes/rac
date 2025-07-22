@@ -35,7 +35,7 @@ const [isDarkMode] = useState(false);
       }
     ],
     videos: [
-      { id: 1, url: "/eletrocentro.webp", title: "Product Overview" },
+      { id: 1, url: "/eletrocentro.png", title: "Product Overview" },
       { id: 2, url: "https://images.unsplash.com/photo-1498049794561-7780e7231661", title: "Features Demo" }
     ]
   };
