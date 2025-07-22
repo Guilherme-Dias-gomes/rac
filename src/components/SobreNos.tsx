@@ -86,7 +86,7 @@ const AboutUs= () => {
         <section className="py-20 px-4 md:px-8 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-16 text-gray-800 dark:text-white">Nossos Valores</h2>
-            <div className="flex md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="flex lg:flex-row flex-col md:grid-cols-2 lg:grid-cols-4 gap-8">
               {values.map((value, index) => (
                 <div key={index} className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:transform hover:scale-105 transition-all duration-300">
                   <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-white">{value.title}</h3>
