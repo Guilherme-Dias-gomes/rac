@@ -35,7 +35,7 @@ const [isDarkMode] = useState(false);
       }
     ],
     videos: [
-      { id: 1, url: "/eletrocentro.webp", title: "Product Overview" },
+      { id: 1, url: "/eletrocentro.png", title: "Product Overview" },
       { id: 2, url: "https://images.unsplash.com/photo-1498049794561-7780e7231661", title: "Features Demo" }
     ]
   };
@@ -67,7 +67,7 @@ const [isDarkMode] = useState(false);
             </motion.p>
             <div className="relative w-full max-w-5xl mx-auto aspect-video rounded-3xl overflow-hidden mb-12 shadow-2xl">
               <img
-                src="/PainelBT.webp"
+                src="/PainelBT.png"
                 alt="Product Hero"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />

@@ -9,7 +9,7 @@ export default function Projetos(){
     id: 1,
     title: 'Grande rede de varejo de materiais de Construção Civil',
     description: 'Retrofit de Subestação de Energia - Substituição de Disjuntores MT e BT, Preventiva da subestação e pintura geral.',
-    image: '/retrofit.webp',
+    image: '/retrofit.png',
     category: 'Web Development',
     demoLink: 'https://example.com/ecommerce-demo',
     githubLink: 'https://github.com/yourusername/ecommerce-project'
@@ -18,7 +18,7 @@ export default function Projetos(){
     id: 2,
     title: 'Grande Indústria Química',
     description: 'Manutenção preventiva e corretiva de Subestações.',
-    image: '/substacao.webp',
+    image: '/substacao.png',
     category: 'Web Development',
     demoLink: 'https://example.com/task-app-demo',
     githubLink: 'https://github.com/yourusername/task-management-app'
@@ -27,7 +27,7 @@ export default function Projetos(){
     id: 3,
     title: 'Grande Empreendimento no Segmento do Varejo',
     description: 'Implantação de paralelismo entre geradores 5x1050kVA com seletividade, automação e controle de rejeições de cargas.',
-    image: '/paralelismo.webp',
+    image: '/paralelismo.png',
     category: 'Mobile App',
     demoLink: 'https://example.com/weather-app-demo',
     githubLink: 'https://github.com/yourusername/weather-forecast-app'
@@ -36,7 +36,7 @@ export default function Projetos(){
     id: 4,
     title: 'Grande Indústria Automobilística',
     description: 'Fornecimento Painel de média tensão 13.8kV - 2MVA - Disjuntor a vácuo.',
-    image: '/painelMdTensao.webp',
+    image: '/painelMdTensao.png',
     category: 'Mobile App',
     demoLink: 'https://example.com/weather-app-demo',
     githubLink: 'https://github.com/yourusername/weather-forecast-app'
@@ -45,7 +45,7 @@ export default function Projetos(){
     id: 5,
     title: 'Grande Indústria de Alimentos',
     description: 'Fornecimento e instalação de gerador e QTA.',
-    image: '/gerador.webp',
+    image: '/gerador.png',
     category: 'Mobile App',
     demoLink: 'https://example.com/weather-app-demo',
     githubLink: 'https://github.com/yourusername/weather-forecast-app'
@@ -54,7 +54,7 @@ export default function Projetos(){
     id: 6,
     title: 'Grande Indústria Automobilística',
     description: 'Fornecimento e instalação de 100 metros rede aérea 13.8kV 2MVA.',
-    image: '/rede-aerea.webp',
+    image: '/rede-aerea.png',
     category: 'Mobile App',
     demoLink: 'https://example.com/weather-app-demo',
     githubLink: 'https://github.com/yourusername/weather-forecast-app'
