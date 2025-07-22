@@ -67,7 +67,7 @@ const [isDarkMode] = useState(false);
             </motion.p>
             <div className="relative w-full max-w-5xl mx-auto aspect-video rounded-3xl overflow-hidden mb-12 shadow-2xl">
               <img
-                src="/eletrocentro.webp"
+                src="/eletrocentro.png"
                 alt="Product Hero"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
