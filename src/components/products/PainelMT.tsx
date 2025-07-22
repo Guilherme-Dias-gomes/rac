@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from "react";
-import { FiPlay } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const PainelMT = () => {
@@ -73,11 +72,6 @@ const [isDarkMode] = useState(false);
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              <motion.button 
-                whileHover={{ scale: 1.1 }}
-                className="absolute inset-0 m-auto w-16 h-16 bg-primary/90 rounded-full flex items-center justify-center">
-                
-              </motion.button>
             </div>
             <motion.button 
               whileHover={{ scale: 1.05 }}
