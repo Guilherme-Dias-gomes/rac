@@ -59,28 +59,28 @@ const ContactSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-28 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center shadow-2xl py-4 shadow-white rounded-3xl bg-white/40">
-        <h2 className="text-3xl font-extrabold text-principal sm:text-5xl mb-8">
+    <section className="py-20 px-4 lg:px-8">
+      <div className="max-w-4xl mx-auto text-center pt-5 shadow-2xl shadow-white rounded-3xl bg-white/50 dark:bg-black/50">
+        <h2 className="text-3xl font-extrabold text-principal dark:text-white sm:text-5xl mb-8">
           Entre em contato
         </h2>
-        <p className="text-2xl font-bold text-principal mb-10">
+        <p className="text-2xl font-bold text-principal dark:text-white mb-10">
           Estamos sempre com energia total para levar ENERGIA até você.
         </p>
-        <div className="flex justify-center space-x-6 mb-12">
+        <div className="flex justify-center gap-3 mb-12">
           {socialLinks.map((link, index) => (
             <SocialIcon key={index} {...link} />
           ))}
         </div>
-        <div className="bg-gray-200 p-8 rounded-lg shadow-md">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">
+        <div className="bg-gray-200 p-8 rounded-lg shadow-md dark:bg-principal">
+          <h3 className="text-2xl font-bold text-gray-800 mb-4 dark:text-white">
             Let&apos;s Connect!
           </h3>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-6 dark:text-white">
             We&apos;d love to hear from you. Reach out to us on any of our social platforms or use the contact form below to get in touch.
           </p>
 
-          <form className="space-y-4">
+          <form className="space-y-4 ">
             <div>
               <input
                 type="text"

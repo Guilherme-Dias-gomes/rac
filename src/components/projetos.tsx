@@ -74,9 +74,9 @@ export default function Projetos() {
 
   return (
     <section id="projects" className="h-full lg:p-24 ">
-      <div className="bg-white/50 p-10 rounded-2xl">
+      <div className="bg-white/50 dark:bg-black/50 p-10 rounded-2xl">
         <h2 className="text-4xl font-bold mb-6 ">Projetos</h2>
-        <div className="mb-4">
+        <div className="mb-4 dark:text-black">
           <button
             onClick={() => setFilter("Todos")}
             className={`mr-2 px-4 py-2 rounded ${
@@ -104,7 +104,7 @@ export default function Projetos() {
             Industria
           </button>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 dark:text-black">
           {filteredProjects.map((project) => (
             <motion.div
               key={project.id}
