@@ -39,7 +39,7 @@ export default function Projetos() {
       title: "Grande Indústria Automobilística",
       description:
         "Fornecimento Painel de média tensão 13.8kV - 2MVA - Disjuntor a vácuo.",
-      image: "/painelMdTensao.png",
+      image: "/PainelMdTensao.png",
       category: "industria",
       demoLink: "https://example.com/weather-app-demo",
       githubLink: "https://github.com/yourusername/weather-forecast-app",
