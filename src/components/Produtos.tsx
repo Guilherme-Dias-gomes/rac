@@ -33,7 +33,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Trasnformador",
+    name: "Transformador",
     description:
       "Transformadores são dispositivos elétricos que transferem energia entre circuitos por meio de indução eletromagnética. Eles consistem em bobinas primárias e secundárias enroladas em torno de um núcleo ferromagnético. Quando uma corrente alternada é aplicada à bobina primária, um campo magnético variável é gerado, induzindo uma corrente na bobina secundária. Essa transferência é baseada na relação de transformação entre as tensões e correntes das bobinas. Transformadores são cruciais na transmissão de energia e no ajuste de voltagem em diversos sistemas elétricos.",
     image: "transformadores.png",

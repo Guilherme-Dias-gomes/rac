@@ -90,11 +90,7 @@ export default function CarouselSize() {
               <div className="p-1">
                 <Card
                   onClick={() => setSelectedService(servico)}
-                  className="cursor-pointer shadow-white shadow-lg"
-                  style={{
-                    background: "var(--color-principal)",
-                    color: "white",
-                  }}
+                  className="cursor-pointer shadow-black dark:shadow-white shadow-lg bg-white dark:bg-principal text-principal dark:text-white"
                 >
                   <CardContent className="flex aspect-square items-center justify-center p-6">
                     <img

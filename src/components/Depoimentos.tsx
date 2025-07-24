@@ -52,11 +52,7 @@ export function Depoimentos() {
               <div className="h-full">
                 <Card
                   onClick={() => setSelectedDepoimentos(depoimentos)}
-                  className="cursor-pointer h-full flex flex-col justify-between"
-                  style={{
-                    background: "var(--color-principal)",
-                    color: "white",
-                  }}
+                  className="cursor-pointer h-full flex flex-col justify-between bg-white dark:bg-principal text-principal dark:text-white"
                 >
                   <img
                     src="/aspa.png"

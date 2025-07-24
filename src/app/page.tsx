@@ -8,7 +8,7 @@ import Produtos from "@/components/Produtos";
 
 export default function Home() {
   return (
-    <main className="top-0 left-0 w-full h-full bg-black/60">
+    <main className="top-0 left-0 w-full h-full bg-gray-500/25  dark:bg-black/60">
       <Header/>
       <section>
         <InitialSection />
